@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="106523" started-at="2022-05-07T14:35:17Z" finished-at="2022-05-07T14:37:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="106523" started-at="2022-05-07T14:35:17Z" finished-at="2022-05-07T14:37:03Z">
+      <class name="TestScript.Test_Script">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:TestScript.Test_Script@6f7fd0e6]" name="openapp" is-config="true" duration-ms="63586" started-at="2022-05-07T14:35:17Z" finished-at="2022-05-07T14:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method status="FAIL" signature="test()[pri:0, instance:TestScript.Test_Script@6f7fd0e6]" name="test" duration-ms="42408" started-at="2022-05-07T14:36:21Z" finished-at="2022-05-07T14:37:03Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id ERP Alternative for SMEs - Free Forever
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-1FKIC5DK', ip: '192.168.12.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id ERP Alternative for SMEs - Free Forever
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-1FKIC5DK', ip: '192.168.12.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+at TestScript.Test_Script.test(Test_Script.java:111)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="FAIL" signature="closeapp(org.testng.ITestResult)[pri:0, instance:TestScript.Test_Script@6f7fd0e6]" name="closeapp" is-config="true" duration-ms="472" started-at="2022-05-07T14:37:03Z" finished-at="2022-05-07T14:37:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=FAILURE method=Test_Script.test()[pri:0, instance:TestScript.Test_Script@6f7fd0e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[.\Photos\Sat May 07 20:07:03 IST 2022.jpeg (The filename, directory name, or volume label syntax is incorrect)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: .\Photos\Sat May 07 20:07:03 IST 2022.jpeg (The filename, directory name, or volume label syntax is incorrect)
+at java.io.FileOutputStream.open0(Native Method)
+at java.io.FileOutputStream.open(Unknown Source)
+at java.io.FileOutputStream.<init>(Unknown Source)
+at java.io.FileOutputStream.<init>(Unknown Source)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
+at Generic.Generic_Screenshot.getPhoto(Generic_Screenshot.java:21)
+at Generic.BaseClass.closeapp(BaseClass.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeapp -->
+      </class> <!-- TestScript.Test_Script -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
